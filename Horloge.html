@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="horloge">
+    <img class="aiguille" id="seconde" src="aiguilleseconde.png" style="left: 283px;"/>
+    <img class="aiguille" id="minute" src="aiguillemin.png"  style="left: 278px;"/>
+    <img class="aiguille" id="heure" src="aiguilleheure.png"  style="left: 278px;"/>
+</div>
+
+
+
+<div id = "alarmeNum">
+    <label for = "heureAlarm"> Votre heure ici :</label>
+    <input type = number id = "heureAlarm">
+    <label for = "minuteAlarm"> Vos minutes ici :</label>
+    <input type = number id = "minuteAlarm">
+    <button id = "alarme" onclick="setAlarme()">Envoyez</button>
+</div>
+
+<div id = "affichAlarme">
+    <span id = "heure1"></span><span id = "min1"></span><span id = sec1></span>
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
